@@ -1,5 +1,4 @@
 # devops
-DevOps notion
 
 ![Vagrant icon!](/images/vagrant.png "Vagrant")
 
