@@ -27,7 +27,7 @@ OBS: no windows pode ser usado o PuTTY
 vagrant ssh-config -- verificar dados de conexao
 vagrant ssh -p 2222 vagrant@127.0.0.1 --conectar no serviço
 
-Obs: Hypervisor ó monitor de maquina virtual, é um processo que cria e executa maquinas virtuais.
+Obs: Hypervisor é o monitor de maquina virtual, é um processo que cria e executa maquinas virtuais.
 
 Ex: Hyper-V, vSphere, Parallels, VMware, VirtualBox
 Tipos de Hypervisors:
