@@ -3,7 +3,7 @@
 Infraestrutura como código.
 Cria ambientes para desenvolvimento.
 
-![Vagrant icon!](/assets/images/vagrant.jpg "Vagrant")
+![Vagrant icon!](vagrant.jpg "Vagrant")
 
 ## instalação:
 sudo apt get virtualbox-qt
