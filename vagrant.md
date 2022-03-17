@@ -24,3 +24,4 @@
   
   - **vagrant halt** -- para a execução da MV
   - **vagrant reload** -- recarrega a configuração da máquina virtual
+  - **vagrant destroy** -- destroy a MV criada pelo comando up
