@@ -1,4 +1,4 @@
-# Vagrant 
+# Vagrant
 
 # 01. A primeira máquina Virtual
 
@@ -11,3 +11,16 @@
 - Para inicializar e rodar a VM com Vagrant, usa-se o comando: **vagrant up**
 - O comando **vagrant status** mostra detalhes sobre o status da máquina virtual
 - Para se conectar com a máquina virtual, usamos a ferramenta **SSH**
+
+ # 02. Configuração da Rede
+  
+  Existem 3 formas para configurar a rede:
+  - **Forwarded Port**
+  Na configuração Forwarded Port, mapeamos uma porta do host para o guest, por exemplo: config.vm.network "forwarded_port", guest: 80, host: 8080
+  - **Private Network**
+  Na Private Network (static ou dhcp) é usado um endereço privado que não é acessível na sua rede pública (por exemplo, a rede empresarial)
+  - **Public Network**
+  Na Public Network (static ou dhcp), usamos um endereço que faz parte da sua rede pública (por exemplo, da rede empresarial)
+  
+  - **vagrant halt** -- para a execução da MV
+  - **vagrant reload** -- recarrega a configuração da máquina virtual
