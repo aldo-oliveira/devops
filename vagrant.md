@@ -1,33 +1,13 @@
 # Vagrant 
 
-Infraestrutura como código.
-Cria ambientes para desenvolvimento.
+# 01. A primeira máquina Virtual
 
-## instalação:
-sudo apt get virtualbox-qt
-sudo apt get vagrant
-
-## configuração:
-mkdir ambiente_dev
-cd ambiente_dev
-
-## comandos
-vagrant init hashicorp/precise64 --inicializa o Vagranfile baixando ambiente box 'precise64'
-
-**Este comando cria tambem o Vagrantfile**
-
-vagrant up -- subindo serviço
-vagrant halt -- Para o serviço
-vagrant status -- verificando status dos serviços ativos
-vagrant ssh - conecta a VM
-OBS: no windows pode ser usado o PuTTY
-
-vagrant ssh-config -- verificar dados de conexao
-vagrant ssh -p 2222 vagrant@127.0.0.1 --conectar no serviço
-
-Obs: Hypervisor é o monitor de maquina virtual, é um processo que cria e executa maquinas virtuais.
-
-Ex: Hyper-V, vSphere, Parallels, VMware, VirtualBox
-Tipos de Hypervisors:
-Tipo 1 ou Bare metal - executados diretamente no hardware do host ex: Hyper-V E vSphere
-Tipo 2 Rodam com uma aplicação em cima do SO ex: VirtualBox e VMware
+- VirtualBox, VMware, Hyper-V, entre outros, são Hypervisors
+- Um **Hypervisor** emula o hardware do computador para criar e executar máquinas virtuais
+- O **Vagrant** é uma ferramenta que **controla** o Hypervisor a partir de um arquivo simples, o **Vagrantfile**
+- O **Vagrantfile** define **detalhes da máquina virtual**, como o sistema operacional, a rede, software utilizado, etc
+- O comando **vagrant init <box>** cria um Vagrantfile ex: 
+- A box é baixada da internet e possui a imagem do sistema operacional, entre outras configurações
+- Para inicializar e rodar a VM com Vagrant, usa-se o comando: **vagrant up**
+- O comando **vagrant status** mostra detalhes sobre o status da máquina virtual
+- Para se conectar com a máquina virtual, usamos a ferramenta **SSH**
